@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     }   // Main Method
 
+
     private void initialView() {    // void ไม่มีคืนค่ากลับ
         userEditText = (EditText) findViewById(R.id.edtUser);
         passEditText = (EditText) findViewById(R.id.edtPass);
