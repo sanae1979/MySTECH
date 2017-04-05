@@ -1,5 +1,6 @@
 package stech.sukprung.sanae.mystech;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
 
-        ///Initial View  [ผูกตัวแปรกับ View ที่ Activity]
+        //Initial View  [ผูกตัวแปรกับ View ที่ Activity]
         initialView();
 
         // create Controller
@@ -56,6 +57,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // For Text view
         if (v == textView) {
             Log.d(tag, "You Click TextView 'New Register'");
+
+            // Create Intent สืบทอดจาก class Intent
+            Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
+            startActivity(intent);
         }
 
         // For Button
